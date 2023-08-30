@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>객체를 만드는 생성자</title>
+</head>
+<body>
+
+    <script>
+        function BestSinger(){
+            this.name="vos"
+            this.member ="김경록, 박지헌, 최현준"
+            this.singing = function(){
+                console.log("그만해..")
+            }
+        }
+
+       const vos =  new BestSinger()
+       console.log(vos.name)
+       console.log(vos.member)
+       vos.singing()
+    </script>
+</body>
+</html>
